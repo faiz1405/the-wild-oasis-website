@@ -5,8 +5,6 @@ const josefin = Josefin_Sans({
   display: "swap",
 });
 
-console.log(josefin);
-
 import "@/app/_styles/globals.css";
 import Header from "@/starter/components/Header";
 
@@ -26,8 +24,8 @@ export default function RootLayout({ children }) {
         className={`min-h-screen bg-primary-950 text-primary-100 ${josefin.className} flex flex-col antialiased relative`}
       >
         <Header />
-        <div className="flex-1 px-8 py-12">
-          <main className="mx-auto max-w-7xl">{children}</main>
+        <div className="flex-1 px-8 py-12 grid">
+          <main className="mx-auto max-w-7xl w-full">{children}</main>
         </div>
       </body>
     </html>
